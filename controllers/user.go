@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/george518/PPGo_ApiAdmin/libs"
-	"github.com/george518/PPGo_ApiAdmin/models"
+	"../libs"
+	"../models"
 )
 
 type UserController struct {

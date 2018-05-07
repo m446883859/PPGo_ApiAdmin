@@ -14,8 +14,8 @@ import (
 	"time"
 
 	"github.com/astaxie/beego"
-	"github.com/george518/PPGo_ApiAdmin/libs"
-	"github.com/george518/PPGo_ApiAdmin/models"
+	"../libs"
+	"../models"
 )
 
 type LoginController struct {
@@ -24,6 +24,8 @@ type LoginController struct {
 
 //登录 TODO:XSRF过滤
 func (self *LoginController) LoginIn() {
+
+	fmt.Println(libs.Md5([]byte("123456"+"123")))
 	if self.userId > 0 {
 		self.redirect(beego.URLFor("HomeController.Index"))
 	}
