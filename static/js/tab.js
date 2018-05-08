@@ -12,11 +12,13 @@ layui.define(["jquery", "element", "nprogress"],
                     mainUrl: "/home/start"
                 },
                     this.v = "1.0.3"
-            }; (n.fn = n.prototype).set = function(i) {
-            var e = this;
-            return t.extend(!0, e.config, i),
-                e
-        },
+            };
+            n.fn=n.prototype;
+            n.fn.set = function(i) {
+                var e = this;
+                t.extend(!0, e.config, i);
+                return e
+            },
             n.fn.render = function() {
                 var i = this,
                     t = i.config;

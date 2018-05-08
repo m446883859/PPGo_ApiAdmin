@@ -91,6 +91,8 @@ func (self *BaseController) auth() {
 }
 
 func (self *BaseController) AdminAuth() {
+
+	fmt.Println("AdminAuth")
 	// 左侧导航栏
 	filters := make([]interface{}, 0)
 	filters = append(filters, "status", 1)

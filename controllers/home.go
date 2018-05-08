@@ -7,17 +7,21 @@
 ***********************************************/
 package controllers
 
+import "fmt"
+
 type HomeController struct {
 	BaseController
 }
 
 func (self *HomeController) Index() {
+	fmt.Println("Index")
 	self.Data["pageTitle"] = "系统首页"
 	//self.display()
 	self.TplName = "public/main.html"
 }
 
 func (self *HomeController) Start() {
+	fmt.Println("1111111111111")
 	self.Data["pageTitle"] = "控制面板"
 	self.display()
 }
